@@ -46,8 +46,8 @@
     100%  { transform: rotate(360deg) translateX(5px) translateY(120px) rotate(-360deg) scale(1); }}*/
 
 .contenedor {
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
     position: relative;
 }
 
