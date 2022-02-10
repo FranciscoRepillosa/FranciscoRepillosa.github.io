@@ -146,17 +146,23 @@ div.optionIcon.n8 {
 /* Modal Content/Box */
 .modal-content {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 30%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 10px 10px #767676;
 }
 
 .modal-item {
-	margin-right: 30px;
-	align-self: center
+	align-self: center;
+	margin-bottom: 20px;
 
 }
 
@@ -166,6 +172,7 @@ div.optionIcon.n8 {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-left: 80%;
 }
 
 .close:hover,
