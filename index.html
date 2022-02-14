@@ -2,40 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>copy</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="contenedor">
-       <div class="icon optionIcon n1" optionIcon> </div>
-	   <div class="optionIcon n2"> </div>
-	   <div class="optionIcon n3"> </div>
-	   <div class="optionIcon n4"> </div>
-	   <div class="optionIcon n5">
-		<img id="settingsIcon" src="setting.svg"></img>
-	   </div>
-	   <div class="optionIcon n6"> </div>
-	   <div class="optionIcon n7"> </div>
-	   <div class="optionIcon n8"> 
-	   </div>
-	   <div id="central" class="icon" central > </div>
+    <div class="menu">
+        <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
+        <li style="--i:0">
+            <a href="#"><ion-icon name="airplane-outline"></ion-icon> </a>
+        </li>
+        <li style="--i:1">
+            <a href="#"><ion-icon name="airplane-outline"></ion-icon></a>
+        </li>
+        <li style="--i:2">
+            <a href="#"><ion-icon name="airplane-outline"></ion-icon></a>
+        </li>
+        <li style="--i:3">
+            <a href="#"><ion-icon name="airplane-outline"></ion-icon></a>
+        </li>
+        <li style="--i:4">
+            <a href="#"><ion-icon name="airplane-outline"></ion-icon></a>
+        </li>
+        <li style="--i:5">
+            <a href="#"><ion-icon name="airplane-outline"></ion-icon></a>
+        </li>
+        <li style="--i:6">
+            <a href="#"><ion-icon name="airplane-outline"></ion-icon></a>
+        </li>
+        <li style="--i:7">
+            <a href="#"><ion-icon name="airplane-outline"></ion-icon></a>
+        </li>
     </div>
-	
-	<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-	<span class="close modal-item">&times;</span>
-	<div id="iconSample" class="icon modal-item"></div>
-	<input class="modal-item" id="colorInput" type="color" value="#B8C4DB" class="modal-item">
-	<input class="modal-item" id="sizeInput" si type="range" min="20" max="45" value=30 class="modal-item">
-  </div>
-
-</div>
-   
+    
+    
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let toggle = document.querySelector(".toggle");
+        let menu = document.querySelector(".menu");
+        console.log(toggle, menu);
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("active")
+        })
+    </script>
 </body>
-<script src="script.js"></script>
 </html>
